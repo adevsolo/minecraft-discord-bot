@@ -17,7 +17,7 @@ const config = require('./config.json')
 const updateChannel = async () => {
 
     // Fetch statistics from mcapi.us
-    const res = await fetch(`https://api.mcsrvstat.us/3/${config.ipAddress}${config.port ? `&port=${config.port}` : ''}`)
+    const res = await fetch(`https://playpixel.space/3/${config.ipAddress}${config.port ? `&port=${config.port}` : ''}`)
     if (!res) {
         const statusChannelName = `【🛡】Status: Offline`
         client.channels.cache.get(config.statusChannel).setName(statusChannelName)
@@ -67,7 +67,7 @@ client.on('messageCreate', async (message) => {
         const sentMessage = await message.channel.send("Fetching statistics, please wait...")
 
         // Fetch statistics from mcapi.us
-        const res = await fetch(`https://api.mcsrvstat.us/3/${config.ipAddress}${config.port ? `&port=${config.port}` : ''}`)
+        const res = await fetch(`https://playpixel.space/3/${config.ipAddress}${config.port ? `&port=${config.port}` : ''}`)
         if (!res) return message.channel.send(`Looks like your server is not reachable... Please verify it's online and it isn't blocking access!`)
         // Parse the mcapi.us response
         const body = await res.json()
