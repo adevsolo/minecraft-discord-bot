@@ -1,12 +1,12 @@
 {
 
-    "token": "your discord bot token",
+    "token": "MTM1NDkwMTg1NTk2MDAzOTU0NQ.GLyHIV.yhK1vRIg1hiKZCoB-W5zO5spKlYv2BipJMQ32k",
 
-    "ipAddress": "mc.hypixel.net",
+    "ipAddress": "playpixel.space",
     "port": "optional - the port of your minecraft server",
-    "playersChannel": "9802980280282",
-    "statusChannel": "3809390383",
+    "playersChannel": "1354930850130563204",
+    "statusChannel": "1354930964647903463",
     "updateInterval": "11min",
 
-    "prefix": "!"
+    "prefix": "!!"
 }
